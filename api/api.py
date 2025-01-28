@@ -1,5 +1,5 @@
 import flask
-from flask import request, jsonify
+from flask import request, jsonify, render_template
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -26,8 +26,7 @@ books = [
 @app.route('/', methods=['GET'])
 
 def home():
-    return '''<h1>Distant Reading Archive</h1><p>A prototype API for distant reading of science fictionnovels.</p>'''
-
+    return render_template("login.html") 
 # A route to return all of the available entries in ourcatalog.
 
 @app.route('/api/v1/resources/books/all', methods=['GET'])
