@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f3f4f6;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Assure que le corps occupe toute la hauteur de l'écran */
+}
+
+.container {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 800px; /* Ajusté pour plus d'espace sur la messagerie */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    color: #333333;
+}
+
+.container h2 {
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+    color: #333333;
+}
+
+.input-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-group label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #333333;
+}
+
+.input-group input[type="text"],
+.input-group textarea {
+    padding: 0.75rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s ease;
+    width: calc(100% - 1.5rem); /* Pour tenir compte du padding et de la bordure */
+    box-sizing: border-box; /* Pour que la largeur inclue le padding et la bordure */
+}
+
+.input-group input[type="text"]:focus,
+.input-group textarea:focus {
+    border-color: #3b82f6;
+}
+
+.container button {
+    padding: 0.75rem;
+    background-color: #3b82f6;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%; /* Le bouton occupe toute la largeur */
+}
+
+.container button:hover {
+    background-color: #2563eb;
+}
+
+/* Styles pour la liste des messages */
+.messages-list {
+    margin-top: 2rem;
+}
+
+.messages-list ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.messages-list li {
+    padding: 1rem;
+    background-color: #f3f4f6;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+    border: 1px solid #d1d5db;
+}
+
+.messages-list li strong {
+    color: #333333;
+}
+
+.messages-list li:hover {
+    background-color: #e5e7eb;
+    cursor: pointer;
+}

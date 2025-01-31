@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Messagerie Professeur</title>
+    <link rel="stylesheet" href="../static/contact.css">
+    <link rel="stylesheet" href="../static/header.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="edt.html">Emploi du temps</a></li>
+                <li><a href="/profile">Profil Professeur</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Messagerie Professeur</h1>
+
+        <!-- Formulaire pour envoyer un message -->
+        <h2>Envoyer un message</h2>
+        <form action="traitement_message.php" method="post">
+            <div class="input-group">
+                <label for="recipient">Destinataire :</label>
+                <input type="text" id="recipient" name="recipient" placeholder="Email ou nom de l'étudiant" required>
+            </div>
+
+            <div class="input-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" placeholder="Votre message ici..." required></textarea>
+            </div>
+
+            <button type="submit">Envoyer</button>
+        </form>
+
+        <!-- Liste des messages reçus -->
+        <h2>Messages reçus</h2>
+        <div class="messages-list">
+            <ul>
+                <li><strong>Élève 1 :</strong> Merci pour l'aide sur le devoir de mathématiques.</li>
+                <li><strong>Élève 2 :</strong> J'ai une question sur l'exercice de physique.</li>
+                <li><strong>Élève 3 :</strong> Pouvez-vous revoir ma dernière correction ?</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

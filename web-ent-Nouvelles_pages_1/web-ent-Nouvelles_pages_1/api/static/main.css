@@ -1,0 +1,53 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Pour que le footer reste en bas */
+  min-height: 100vh;
+}
+
+header {
+  background-color: #ffffff; /* Fond blanc pour l'en-tête */
+  padding: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+nav li {
+  margin: 0 1.5rem;
+}
+
+nav a {
+  color: #333333; /* Couleur de texte plus sombre */
+  text-decoration: none;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Transition pour la couleur du texte */
+}
+
+nav a:hover {
+  background-color: #e5e7eb; /* Gris clair au survol */
+  color: #3b82f6; /* Couleur du texte au survol */
+}
+
+main {
+  padding: 2rem;
+  flex-grow: 1; /* Permet au contenu principal de grandir pour occuper l'espace disponible */
+}
+
+footer {
+  background-color: #ffffff;
+  color: #6b7280;
+  text-align: center;
+  padding: 1rem 0;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Ombre en haut du footer */
+}
